@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="Styles.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <script defer src="Funciones.js"></script>
+  <title>Frontend Mentor | E-commerce product page</title>
+</head>
+
+<body>
+
+  <!--Menu-->
+  <header class="Header">
+    <div class="Menu_Fondo"></div>
+      <nav class="Menu">
+        <img id="Menu_Des" src="images/icon-menu.svg" alt="Menu"></button>
+        <ul class="Enlaces">
+          <img id="Cerrar" src="images/icon-close.svg" alt="x"></button>
+          <li class="Collections"><a href="#Collections">Collections</a></li>
+          <li class="Men"><a href="#Menu">Men</a></li>
+          <li class="Women"><a href="#Women">Women</a></li>
+          <li class="About"><a href="#About">About</a></li>
+          <li class="Contact"><a href="#Contact">Contact</a></li>
+        </ul>
+        <h1 class="Sneakers">sneakers</h1>
+      </nav>
+
+    <div class="MenuRight">
+      <img class="Car" src="images/icon-cart.svg" alt="Car">
+        <span class="CantPro"></span>
+      <img class="Avatar" src="images/image-avatar.png" alt="Avatar">
+    </div>
+  </header>
+
+  <div class="ContentPrin">
+    <!--Galery-->
+    <div class="ContainerGallery">
+      <div class="imgPrin">
+        <img class="imgG" src="images/image-product-1.jpg" alt="img1">
+      </div>
+      <div class="Gallery">
+        <img id="img1" class="imGal" src="images/image-product-1.jpg" alt="img1t">
+        <img id="img2" class="imGal" src="images/image-product-2.jpg" alt="img2t">
+        <img id="img3" class="imGal" src="images/image-product-3.jpg" alt="img3t">
+        <img id="img4" class="imGal" src="images/image-product-4.jpg" alt="img4t">
+      </div>
+    </div>
+    <!--Slider-->
+    <div class="ContainerSlider">
+      <div id="Slider">
+        <img class="img" src="images/image-product-1.jpg" alt="img1">
+        <img class="img" src="images/image-product-2.jpg" alt="img2">
+        <img class="img" src="images/image-product-3.jpg" alt="img3">
+        <img class="img" src="images/image-product-4.jpg" alt="img4">
+        <div class="Cart">
+          <h5>Cart</h5>
+          <div class="CartContent">
+            <img class="Tenn" src="images/image-product-1-thumbnail.jpg" alt="imgthu1">
+            <img class="Delete" src="images/icon-delete.svg" alt="delete">
+            <div class="GridText">    
+              <p class="Fall"></p>
+              <div class="Values">
+                <p class="CostoUni"></p>
+                <p class="Cantidad"></p>
+                <p class="ValueTottal"></p>
+              </div>
+            </div>
+          </div>
+          <button class="Checkout">Checkout</button>
+        </div>
+      </div>
+
+
+      <img id="Back" src="images/icon-previous.svg" alt="back">
+      <img id="Next" src="images/icon-next.svg" alt="next">
+    </div>
+    <!--Contenido-->
+    <div class="Content">
+      <h5 class="NameCompany">Sneaker Company</h5>
+      <h1 class="NameProduct">Fall Limited Edition Sneakers</h1>
+      <p class="Text">These low-profile sneakers are your perfect casual wear companion. Featuring a 
+      durable rubber outer sole, they’ll withstand everything the weather can offer.</p>
+    
+
+      <!--Precios-->
+      <div class="Precious">
+        <div class="PrecDec"> 
+          <p class="Total">$125.00</p>
+          <p class="Desc">50%</p>
+        </div>
+          <p class="costo">$250.00</p>
+      </div>
+
+    <div class="FlexBoton">
+        <!--Agregar productos-->
+        <div class="CartBuys">
+          <img id="Minus" src="images/icon-minus.svg" alt="-">
+          <span class="Cant">0</span>
+          <img id="Plus" src="images/icon-plus.svg" alt="+">
+        </div>
+        
+        <button class="Add" onclick="AddCar()"><img src="images/icon-cart.svg" alt="cart">Add to cart</button> 
+    </div>
+  </div>
+</body>
+</html>
